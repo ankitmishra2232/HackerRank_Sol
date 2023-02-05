@@ -39,4 +39,33 @@ print(valley_count)
 
 #https://www.hackerrank.com/challenges/electronics-shop/problem
 
+b=6
+key= [40,50,60]
+drives=[5,8,12]
+out=[]
 
+for i in range(len(key)):
+    for j in range(len(drives)):
+        sum = key[i]+drives[j]
+        result = b-sum
+        if result >= 0:
+            out.append(sum)
+if out ==[]:
+    print('-1')
+else:
+    print(max(out))
+    
+# https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
+
+x=1
+y=3
+z=2
+
+catA = abs(x - z)
+catB = abs(y - z)
+if catA < catB:
+    print('Cat A') 
+elif catB < catA:
+    print('Cat B')
+else:
+    print('Mouse C')
