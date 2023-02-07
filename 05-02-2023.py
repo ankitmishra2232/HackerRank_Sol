@@ -93,3 +93,27 @@ def formingMagicSquare(s):
                 cost+=abs(q[i][j]-s[i][j])
         costs.append(cost)
     print(min(costs)) 
+    
+    
+    
+    
+
+
+ # https://www.hackerrank.com/challenges/picking-numbers/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
+ 
+a=[4,6,5,3,3,1]
+a.sort()
+maxLen = 1
+for i in range(len(a)):
+    maxElement = a[i]
+    minElement = a[i]
+    
+    for j in range(i+1, len(a)):
+        maxElement = max(maxElement, a[j])
+        minElement = min(minElement, a[j])
+        if ((maxElement - minElement) <=1):
+            current_lenght = j - i + 1
+            maxLen = max(maxLen, current_lenght)
+print(maxLen)
+
+
