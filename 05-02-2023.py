@@ -128,6 +128,15 @@ else:
     print(ans)
 
 
+# https://www.hackerrank.com/challenges/designer-pdf-viewer/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
 
+def designerPdfViewer(h, word):
+    a=[]
+    b=[]
+    for i in word:
+        a.append(ord(i)-97)
+    for j in a:
+        b.append(int(h[j]))
+    return max(b)*len(a)
 
 
