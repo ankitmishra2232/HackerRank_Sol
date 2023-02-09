@@ -117,3 +117,17 @@ for i in range(len(a)):
 print(maxLen)
 
 
+# https://www.hackerrank.com/challenges/the-hurdle-race/problem?isFullScreen=true
+k=5
+height=[1,2,5,5,8,6]
+
+ans = max(height) - k    
+if ans < 0:
+    print('0')
+else:
+    print(ans)
+
+
+
+
+
